@@ -11,3 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: ha-ha
+        id: joke
+        uses: ./.github/actions/joke-action
+        with:
+          joke-type: dad
